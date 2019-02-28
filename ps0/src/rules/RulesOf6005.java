@@ -12,7 +12,7 @@ public class RulesOf6005 {
 	//changes
 	//changes for the lab 
     /**
-     *Git Initialized
+     *
      * Judge whether a given piece of code may be used in an assignment (problem
      * set or team project) or not, according to the 6.005 collaboration policy.
      * 
