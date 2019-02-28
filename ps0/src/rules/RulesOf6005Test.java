@@ -17,9 +17,14 @@ public class RulesOf6005Test {
      */
     @Test
     public void testMayUseCodeInAssignment() {
+    	assertFalse("Expected true:  implementation required ",
+                RulesOf6005.mayUseCodeInAssignment(true, true, true, false, false));
         assertFalse("Expected false: un-cited publicly-available code",
-                RulesOf6005.mayUseCodeInAssignment(false, true, false, false, false));
+                RulesOf6005.mayUseCodeInAssignment(true, false, false, false, false));
         assertTrue("Expected true: self-written required code",
                 RulesOf6005.mayUseCodeInAssignment(true, false, true, true, true));
+        
+        
+        
     }
 }
